@@ -26,7 +26,7 @@ architecture a1 of temporizador is
 
 begin
     --atribuições dos sinais auxiliares de acordo com o valor das casas do cronometro
-    signalSl  <= '1' when segL = "0000" else '0';
+    signalSl <= '1' when segL = "0000" else '0';
     signalSh <= '1' when segH = "0000" else '0';
     signalMl <= '1' when minL = "0000" else '0';
     siganlMh <= '1' when minH = "0000" else '0';

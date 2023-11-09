@@ -20,7 +20,7 @@ end relogio_xadrez;
 
 architecture relogio_xadrez of relogio_xadrez is
     -- Estados da FSM
-    type states is (INIT, DEC1, DEC2, GAN1, GAN2);
+    type states is (INIT, LOADING, DEC1, DEC2, GAN1, GAN2);
 
     -- Sinais que armazenam o estado atual(EA) e o próximo(PE)
     signal EA, PE : states;
@@ -54,12 +54,18 @@ begin
         case EA is 
             -- Estado de reset
             when INIT =>
+                if load = '1' then
+                    PE <= LOADING;
+                elsif load = '0' then
+                    PE <= INIT;
+                end if;
+
+            -- Estado de load, aguardando início do jogo
+            when LOADING =>
                 if j1 = '1' then
                     PE <= DEC1;
-                elsif j2 = '1' then
-                    PE <= DEC2;
-                else
-                    PE <= INIT;
+                elsif j1 = '0' then
+                    PE <= LOADING;
                 end if;
 
             -- Estado que decrementa o contador1
