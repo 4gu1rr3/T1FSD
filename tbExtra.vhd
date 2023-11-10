@@ -26,7 +26,7 @@ architecture arch of tb is
     type padroes is array(natural range <>) of test_record;
 
     constant padrao_de_teste: padroes := (
-            (t =>   4,  load=>'1', init=>x"15", j1=>'0', j2 =>'0'),   -- partida de 20 minutos
+            (t =>   4,  load=>'1', init=>x"15", j1=>'0', j2 =>'0'),   -- partida de 15 minutos
             (t =>  10,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 começa a partida 10 ciclos depois
             (t => 120,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 joga por 120 ciclos (2 min)
             (t => 120,  load=>'0', init=>x"00", j1=>'0', j2 =>'1'),   -- jogador 2 joga por 120 ciclos (2 min)
@@ -35,14 +35,16 @@ architecture arch of tb is
             (t => 360,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 joga por 360 ciclos (6 min)  (12)
             (t => 240,  load=>'0', init=>x"00", j1=>'0', j2 =>'1'),   -- jogador 2 joga por 240 ciclos (4 min)  (12)
             (t => 150,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 joga por 60 ciclos (2'30'' min)  (14'30)
-            (t => 510,  load=>'0', init=>x"00", j1=>'0', j2 =>'1'),   -- jogador 2 joga por 510 ciclos (8'30' min)  (19'30)  Jogador 2 estourando o tempo - falta 30 seg
-            (t =>   4,  load=>'1', init=>x"05", j1=>'0', j2 =>'0'),
-            (t => 120,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),
-            (t => 210,  load=>'0', init=>x"00", j1=>'0', j2 =>'1'),
-            (t => 60,   load=>'0', init=>x"00", j1=>'1', j2 =>'0'),
-            (t => 60,   load=>'0', init=>x"00", j1=>'0', j2 =>'1'),
-            (t => 120,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 joga por 240 ciclos (4 min)  (18'30)  Jogador 1 estourando o tempo - falha 1 min 30
+            (t => 510,  load=>'0', init=>x"00", j1=>'0', j2 =>'1'),   -- jogador 2 joga por 510 ciclos (8'30' min)  (19'30)  Jogador 2 estoura o tempo
+            (t =>   4,  load=>'1', init=>x"05", j1=>'0', j2 =>'0'),   -- partida de 05 minutos
+            (t =>   5,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 começa a partida 5 ciclos depois
+            (t => 120,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 joga por 120 ciclos (2 min)
+            (t =>  60,  load=>'0', init=>x"00", j1=>'0', j2 =>'1'),   -- jogador 2 joga por 60 ciclos (1 min)
+            (t =>  60,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),   -- jogador 1 joga por 60 ciclos (1 min)  (3)
+            (t =>  210, load=>'0', init=>x"00", j1=>'0', j2 =>'1'),   -- jogador 2 joga por 210 ciclos (3'30'' min)  (4'30)
+            (t =>  360,  load=>'0', init=>x"00", j1=>'1', j2 =>'0'),  -- jogador 1 joga por 180 ciclos (3 min)  (6) Jogador 1 estoura o tempo
             (t => 10000,load=>'0', init=>x"00", j1=>'0', j2 =>'0'));  -- ultimo comando – coloca todos os valores em zero
+
 
 begin
 

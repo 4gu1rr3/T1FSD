@@ -7,9 +7,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/yasmin.cardozo/Documents/T1FSD
+Z0 dC:/Users/yasmi/OneDrive/Documents/T1FSD
 Edec_counter
-Z1 w1699542543
+Z1 w1698675536
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -23,9 +23,9 @@ VXj3jag?FTn<ggMS<T@NVb0
 !s100 Z;XM:oFO=_lKU:P9`UiXP1
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1699547776
+Z9 !s110 1699580540
 !i10b 1
-Z10 !s108 1699547776.000000
+Z10 !s108 1699580540.000000
 Z11 !s90 -reportprogress|300|-work|work|dec_counter.vhd|
 Z12 !s107 dec_counter.vhd|
 !i113 1
@@ -52,7 +52,7 @@ R12
 R13
 R14
 Erelogio_xadrez
-Z16 w1699546841
+Z16 w1699577847
 R2
 R3
 R4
@@ -66,42 +66,42 @@ V:mP9^zSbnBgH8^`OUm6U33
 !s100 D7]C2jozda_?OM=9:4F@B0
 R8
 32
-Z19 !s110 1699547777
+Z19 !s110 1699580541
 !i10b 1
-R10
-Z20 !s90 -reportprogress|300|-work|work|relogio_xadrez.vhd|
-Z21 !s107 relogio_xadrez.vhd|
+Z20 !s108 1699580541.000000
+Z21 !s90 -reportprogress|300|-work|work|relogio_xadrez.vhd|
+Z22 !s107 relogio_xadrez.vhd|
 !i113 1
 R13
 R14
 Arelogio_xadrez
-Z22 DEx4 work 12 temporizador 0 22 O4k^:g>inoZd3gNB:kU1V1
+Z23 DEx4 work 12 temporizador 0 22 O4k^:g>inoZd3gNB:kU1V1
 R2
 R3
 R4
 R5
-Z23 DEx4 work 14 relogio_xadrez 0 22 :mP9^zSbnBgH8^`OUm6U33
+Z24 DEx4 work 14 relogio_xadrez 0 22 :mP9^zSbnBgH8^`OUm6U33
 l34
 L21
-VAP?:^43j1D07J^a8ijKBg1
-!s100 =<SdA=TKcB]S^QU@Ki=UP0
+Vnb_gJ1TY2g9obk?fkV0Dh1
+!s100 0AMc28XCeE_G0YNBBo3kD3
 R8
 32
 R19
 !i10b 1
-R10
 R20
 R21
+R22
 !i113 1
 R13
 R14
 Etb
-Z24 w1699547772
+Z25 w1699580524
 R4
 R5
 R0
-Z25 8tbExtra.vhd
-Z26 FtbExtra.vhd
+Z26 8tbExtra.vhd
+Z27 FtbExtra.vhd
 l0
 L8
 Vb2LRd]ZQUK=bOblDCj<UO3
@@ -110,7 +110,7 @@ R8
 32
 R19
 !i10b 1
-Z27 !s108 1699547777.000000
+R20
 Z28 !s90 -reportprogress|300|-work|work|tbExtra.vhd|
 Z29 !s107 tbExtra.vhd|
 !i113 1
@@ -119,26 +119,26 @@ R14
 Aarch
 R2
 R3
-R23
+R24
 R4
 R5
 DEx4 work 2 tb 0 22 b2LRd]ZQUK=bOblDCj<UO3
-l47
+l49
 L11
-VK3lzb7;f0U9mNbTe9`Pjo2
-!s100 PW=8G8>0`6>W1MYH0Kz^z3
+VL=8iD2PeC?W7[D8A8WEAE1
+!s100 UY]Od5XY9clER^DoN`dIn2
 R8
 32
 R19
 !i10b 1
-R27
+R20
 R28
 R29
 !i113 1
 R13
 R14
 Etemporizador
-Z30 w1699542679
+Z30 w1699573740
 R4
 R5
 R0
@@ -150,9 +150,9 @@ VO4k^:g>inoZd3gNB:kU1V1
 !s100 kYPo85n_k_UYcm33O@_EF1
 R8
 32
-R9
+R19
 !i10b 1
-R10
+R20
 Z33 !s90 -reportprogress|300|-work|work|temporizador.vhd|
 Z34 !s107 temporizador.vhd|
 !i113 1
@@ -164,16 +164,16 @@ R3
 R15
 R4
 R5
-R22
+R23
 l27
 L17
 V6Hm47ezV181OEV76Qa5L;2
 !s100 bLBd4?i8R;]meh7DZE5M@1
 R8
 32
-R9
+R19
 !i10b 1
-R10
+R20
 R33
 R34
 !i113 1

@@ -103,6 +103,6 @@ begin
     winJ2 <= '1' when EA = GAN2 else '0';
     en1 <= '1' when EA = DEC1 else '0';
     en2 <= '1' when EA = DEC2 else '0';
-    contj1 <= cont1;
-    contj2 <= cont2;
+    contj1 <= "0000000000000000" when EA = INIT else cont1;
+    contj2 <= "0000000000000000" when EA = INIT else cont2;
 end relogio_xadrez;
